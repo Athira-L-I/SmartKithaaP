@@ -9,10 +9,10 @@ if(isset($_POST['Search'])) {
 	$name = $_POST['keywords'];
 
 // Your AWS Access Key ID, as taken from the AWS Your Account page
-$aws_access_key_id = "AKIAIAQRDD3EJNDPPSNQ";
+$aws_access_key_id = " /*copy paste your access key id*/ ";
 
 // Your AWS Secret Key corresponding to the above ID, as taken from the AWS Your Account page
-$aws_secret_key = "i1+KYmnXdZXmwyMoQWxiDVr12PZ0BiKlyf7eocid";
+$aws_secret_key = " /*copy paste your secret key */ ";
 
 // The region you are interested in
 $endpoint = "webservices.amazon.in";
@@ -23,7 +23,7 @@ $params = array(
     "Service" => "AWSECommerceService",
     "Operation" => "ItemSearch",
     "AWSAccessKeyId" => "AKIAIAQRDD3EJNDPPSNQ",
-    "AssociateTag" => "blue01b-21",
+    "AssociateTag" => "/* your associate tag*/",
     "SearchIndex" => "Books",
     "ResponseGroup" => "ItemAttributes, Offers, Images",
     "Keywords" => $name,
@@ -91,8 +91,8 @@ $url= "https://affiliate-api.flipkart.net/affiliate/1.0/search.json?query=" . $q
 	        //The headers are required for authentication
 	        $headers = array(
 	            'Cache-Control: no-cache',
-	            'Fk-Affiliate-Id: athirali4',
-	            'Fk-Affiliate-Token: 035e8cb5cf8444b0b01704f35a7c1e25'
+	            'Fk-Affiliate-Id: /*your flipkart affiliate id */',
+	            'Fk-Affiliate-Token: /*your affiliate token*/'
 	            );
 	        $ch = curl_init();
 	        curl_setopt($ch, CURLOPT_URL, $url);
