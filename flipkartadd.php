@@ -33,4 +33,4 @@ function flipkartAddToDB($array, $mysqli)
 		$x++;
 	}
 }
-	?>
+	?> 
