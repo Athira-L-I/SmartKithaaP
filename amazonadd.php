@@ -34,7 +34,7 @@ function amazonAddToDB($parsed_xml, $mysqli){
 		
 		if(isset($current->Offers->Offer->OfferListing->Price->FormattedPrice))
 			$price= $current->Offers->Offer->OfferListing->Price->FormattedPrice;		
-		else $price="";
+		else $price=""; 
 		
 		if(isset($current->Offers->Offer->OfferListing->PercentageSaved))
 			$discount= $current->Offers->Offer->OfferListing->PercentageSaved;		
