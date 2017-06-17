@@ -34,7 +34,7 @@ $result=mysqli_query($mysqli, "SELECT * FROM books");
 			} 
 		if (isset($author)) {
 				print("<br>Author: ".$author);
-			} 
+			}  
 		if (isset($edition)) {
 				print("<br>Edition: ".$edition);
 			} 
