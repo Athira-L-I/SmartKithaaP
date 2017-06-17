@@ -35,7 +35,7 @@ function printSearchResults($parsed_xml){
 			} 
 			if (isset($current->ItemAttributes->PublicationDate)) {
 				print("<br>Publication Date: ".$current->ItemAttributes->PublicationDate);
-			} 
+			}  
 			if(isset($current->Offers->Offer->OfferListing->Price->FormattedPrice)){
 				print("<br>Price: ".$current->Offers->Offer->OfferListing->Price->FormattedPrice);
 				if(isset($current->Offers->Offer->OfferListing->PercentageSaved))
