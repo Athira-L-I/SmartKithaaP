@@ -1,8 +1,7 @@
 <?php
 $databaseHost = 'localhost';
-$databaseName = 'athira';
+$databaseName = '/*your database name*/';
 $databaseUsername = 'root';
-$databasePassword = 'secret';
-
+$databasePassword = '/*if your database has password enter here*/'
 $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName) or die("cannot connect to database");
 ?>
